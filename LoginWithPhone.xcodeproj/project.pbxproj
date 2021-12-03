@@ -13,9 +13,15 @@
 		759C1D472759C74A0069A255 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 759C1D452759C74A0069A255 /* Main.storyboard */; };
 		759C1D492759C74C0069A255 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 759C1D482759C74C0069A255 /* Assets.xcassets */; };
 		759C1D4C2759C74C0069A255 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 759C1D4A2759C74C0069A255 /* LaunchScreen.storyboard */; };
+		759C1D542759C88D0069A255 /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759C1D532759C88D0069A255 /* OTPViewController.swift */; };
+		759C1D562759C8A10069A255 /* LoggedInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759C1D552759C8A10069A255 /* LoggedInViewController.swift */; };
+		759C1D5A2759C9C60069A255 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 759C1D592759C9C20069A255 /* GoogleService-Info.plist */; };
+		DC4819F530F49E6716C3B592 /* Pods_LoginWithPhone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3782E51A166C78B03B639546 /* Pods_LoginWithPhone.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3782E51A166C78B03B639546 /* Pods_LoginWithPhone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginWithPhone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62D9AC49E794CA3FF5FA0BF0 /* Pods-LoginWithPhone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginWithPhone.release.xcconfig"; path = "Target Support Files/Pods-LoginWithPhone/Pods-LoginWithPhone.release.xcconfig"; sourceTree = "<group>"; };
 		759C1D3C2759C74A0069A255 /* LoginWithPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginWithPhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		759C1D3F2759C74A0069A255 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		759C1D412759C74A0069A255 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,10 @@
 		759C1D482759C74C0069A255 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		759C1D4B2759C74C0069A255 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		759C1D4D2759C74C0069A255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		759C1D532759C88D0069A255 /* OTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
+		759C1D552759C8A10069A255 /* LoggedInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedInViewController.swift; sourceTree = "<group>"; };
+		759C1D592759C9C20069A255 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F798470CF70922A2FD3C058C /* Pods-LoginWithPhone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginWithPhone.debug.xcconfig"; path = "Target Support Files/Pods-LoginWithPhone/Pods-LoginWithPhone.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC4819F530F49E6716C3B592 /* Pods_LoginWithPhone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5ABAA7AD749C3A418F42719E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3782E51A166C78B03B639546 /* Pods_LoginWithPhone.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		69866E57AA3639056D7E30E6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F798470CF70922A2FD3C058C /* Pods-LoginWithPhone.debug.xcconfig */,
+				62D9AC49E794CA3FF5FA0BF0 /* Pods-LoginWithPhone.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		759C1D332759C74A0069A255 = {
 			isa = PBXGroup;
 			children = (
 				759C1D3E2759C74A0069A255 /* LoginWithPhone */,
 				759C1D3D2759C74A0069A255 /* Products */,
+				69866E57AA3639056D7E30E6 /* Pods */,
+				5ABAA7AD749C3A418F42719E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +94,9 @@
 				759C1D482759C74C0069A255 /* Assets.xcassets */,
 				759C1D4A2759C74C0069A255 /* LaunchScreen.storyboard */,
 				759C1D4D2759C74C0069A255 /* Info.plist */,
+				759C1D592759C9C20069A255 /* GoogleService-Info.plist */,
+				759C1D532759C88D0069A255 /* OTPViewController.swift */,
+				759C1D552759C8A10069A255 /* LoggedInViewController.swift */,
 			);
 			path = LoginWithPhone;
 			sourceTree = "<group>";
@@ -74,9 +108,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 759C1D502759C74C0069A255 /* Build configuration list for PBXNativeTarget "LoginWithPhone" */;
 			buildPhases = (
+				FD5C3EF22806CD5E312E2006 /* [CP] Check Pods Manifest.lock */,
 				759C1D382759C74A0069A255 /* Sources */,
 				759C1D392759C74A0069A255 /* Frameworks */,
 				759C1D3A2759C74A0069A255 /* Resources */,
+				89C06943F2D2202151CD61C6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				759C1D4C2759C74C0069A255 /* LaunchScreen.storyboard in Resources */,
+				759C1D5A2759C9C60069A255 /* GoogleService-Info.plist in Resources */,
 				759C1D492759C74C0069A255 /* Assets.xcassets in Resources */,
 				759C1D472759C74A0069A255 /* Main.storyboard in Resources */,
 			);
@@ -133,11 +170,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		89C06943F2D2202151CD61C6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoginWithPhone/Pods-LoginWithPhone-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoginWithPhone/Pods-LoginWithPhone-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LoginWithPhone/Pods-LoginWithPhone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD5C3EF22806CD5E312E2006 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LoginWithPhone-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		759C1D382759C74A0069A255 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				759C1D542759C88D0069A255 /* OTPViewController.swift in Sources */,
+				759C1D562759C8A10069A255 /* LoggedInViewController.swift in Sources */,
 				759C1D442759C74A0069A255 /* ViewController.swift in Sources */,
 				759C1D402759C74A0069A255 /* AppDelegate.swift in Sources */,
 				759C1D422759C74A0069A255 /* SceneDelegate.swift in Sources */,
@@ -284,6 +365,7 @@
 		};
 		759C1D512759C74C0069A255 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F798470CF70922A2FD3C058C /* Pods-LoginWithPhone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +394,7 @@
 		};
 		759C1D522759C74C0069A255 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62D9AC49E794CA3FF5FA0BF0 /* Pods-LoginWithPhone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
